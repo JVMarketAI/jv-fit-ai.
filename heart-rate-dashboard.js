@@ -9,7 +9,7 @@
     const section = document.createElement('section');
     section.id = 'jv-hr-dashboard';
     section.style.cssText = `
-      margin: 18px 0;
+      margin: 18px 0 120px;
       padding: 18px;
       border: 1px solid #ff7a30;
       border-radius: 16px;
