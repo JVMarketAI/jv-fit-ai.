@@ -74,6 +74,23 @@
 
     let current = api.newPlan();
 
+    section.querySelector('#jv-new-workout')
+      .addEventListener('click', () => {
+        if (current.exercises.length &&
+            !confirm(
+              'Start a new workout? Unsaved changes will be lost.'
+            )) {
+          return;
+        }
+
+        current = api.newPlan();
+        nameInput.value = current.name;
+        renderExercises();
+
+        status.textContent =
+          'New workout ready. Your saved plans are safe.';
+      });
+
     function field(label, value, onChange, type = 'text') {
       const wrapper = document.createElement('label');
       wrapper.style.cssText = `
