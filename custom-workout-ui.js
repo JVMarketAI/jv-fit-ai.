@@ -32,11 +32,16 @@
         padding:12px;margin:8px 0 16px;
         border:1px solid #ccc;border-radius:10px">
 
-      <div id="jv-exercise-list"></div>
+      <div id="jv-exercise-list"></div>      
+      
+<button id="jv-new-workout" type="button">
+  ➕ New Workout
+</button>
 
-      <button id="jv-add-exercise" type="button">
-        ➕ Add Exercise
-      </button>
+<button id="jv-add-exercise" type="button">
+  ➕ Add Exercise
+</button>
+
 
       <button id="jv-save-plan" type="button">
         💾 Save Workout Plan
